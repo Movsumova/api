@@ -1,0 +1,322 @@
+{
+	"id": "db9c379d-7e91-4635-8213-3f51aa8632a7",
+	"name": "DemoShopping",
+	"timestamp": "2024-12-07T03:25:40.853Z",
+	"collection_id": "31330919-9c2125e6-3cdc-4a2a-9157-f5577e5f9957",
+	"folder_id": "31330919-78720ba7-fe24-4b86-b7ab-2e8379835413",
+	"environment_id": "31330919-1774d17a-3841-4f39-872b-705423eaf674",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-07T03:25:36.734Z",
+	"totalFail": 11,
+	"results": [
+		{
+			"id": "33feba6f-3fe7-460f-afcd-0547b418b6c3",
+			"name": "Get Products List",
+			"url": "qa.demoshopping.ru/products",
+			"time": 172,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Список продуктов": true,
+				"Response time is less than 700ms": true,
+				"Response has expected structure and data types": true
+			},
+			"testPassFailCounts": {
+				"Список продуктов": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has expected structure and data types": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Список продуктов": true,
+					"Response time is less than 700ms": true,
+					"Response has expected structure and data types": true
+				}
+			]
+		},
+		{
+			"id": "ce462fb5-7f8c-45d2-9d67-20abb27a211a",
+			"name": "Adding new product",
+			"url": "qa.demoshopping.ru/add-product",
+			"time": 141,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Продукт успешно добавлен": false,
+				"Ошибка в данных продукта": false,
+				"Request Body - Valid Structure and Data Types": true,
+				"Response Time is Less Than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Продукт успешно добавлен": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Ошибка в данных продукта": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Request Body - Valid Structure and Data Types": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Time is Less Than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Продукт успешно добавлен": false,
+					"Ошибка в данных продукта": false,
+					"Request Body - Valid Structure and Data Types": true,
+					"Response Time is Less Than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "8ab3d52e-f713-49a1-b100-a8e25d567cea",
+			"name": "Search for product by ID",
+			"url": "qa.demoshopping.ru/products/id/2698",
+			"time": 167,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Данные о продукте": false,
+				"Товар с таким ID не найден": true,
+				"Content-Type is Application/JSON": false,
+				"Response Time is Less Than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Данные о продукте": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Товар с таким ID не найден": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is Application/JSON": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response Time is Less Than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Данные о продукте": false,
+					"Товар с таким ID не найден": true,
+					"Content-Type is Application/JSON": false,
+					"Response Time is Less Than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "b876dd5e-ec56-42e2-8ba5-41f3b9959551",
+			"name": "Delete product Id",
+			"url": "qa.demoshopping.ru/products/id/2698?productId=<integer>",
+			"time": 155,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Товар успешно удалён (200)": false,
+				"Товар с таким ID не найден": true,
+				"Удаление этого товара запрещено": false,
+				"Response Time is Less Than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Товар успешно удалён (200)": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Товар с таким ID не найден": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Удаление этого товара запрещено": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response Time is Less Than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				155
+			],
+			"allTests": [
+				{
+					"Товар успешно удалён (200)": false,
+					"Товар с таким ID не найден": true,
+					"Удаление этого товара запрещено": false,
+					"Response Time is Less Than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "87636e45-3553-4bf4-8f04-ffc7eca8cb33",
+			"name": "Total product update by ID",
+			"url": "qa.demoshopping.ru/products/id/4",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Товар успешно обновлён": true,
+				"Неверные данные продукта": false,
+				"Товар с таким ID не найден": false,
+				"Обновление этого товара запрещено": false,
+				"Response Body Contains Updated Data": true,
+				"Response Time is Less Than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Товар успешно обновлён": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Неверные данные продукта": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Товар с таким ID не найден": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Обновление этого товара запрещено": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response Body Contains Updated Data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Time is Less Than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Товар успешно обновлён": true,
+					"Неверные данные продукта": false,
+					"Товар с таким ID не найден": false,
+					"Обновление этого товара запрещено": false,
+					"Response Body Contains Updated Data": true,
+					"Response Time is Less Than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "80085bde-8244-4787-a177-d062c7fd0ff9",
+			"name": "Partial product update by id",
+			"url": "qa.demoshopping.ru/products/id/2699?productId=2699",
+			"time": 185,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Товар успешно обновлён": false,
+				"Неверные данные продукта": false,
+				"Товар с таким ID не найден": true,
+				"Response Time is Less Than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Товар успешно обновлён": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Неверные данные продукта": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Товар с таким ID не найден": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Time is Less Than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Товар успешно обновлён": false,
+					"Неверные данные продукта": false,
+					"Товар с таким ID не найден": true,
+					"Response Time is Less Than 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1030,
+	"collection": {
+		"requests": [
+			{
+				"id": "33feba6f-3fe7-460f-afcd-0547b418b6c3",
+				"method": "GET"
+			},
+			{
+				"id": "ce462fb5-7f8c-45d2-9d67-20abb27a211a",
+				"method": "POST"
+			},
+			{
+				"id": "8ab3d52e-f713-49a1-b100-a8e25d567cea",
+				"method": "GET"
+			},
+			{
+				"id": "b876dd5e-ec56-42e2-8ba5-41f3b9959551",
+				"method": "DELETE"
+			},
+			{
+				"id": "87636e45-3553-4bf4-8f04-ffc7eca8cb33",
+				"method": "PUT"
+			},
+			{
+				"id": "80085bde-8244-4787-a177-d062c7fd0ff9",
+				"method": "PATCH"
+			}
+		]
+	}
+}
