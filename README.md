@@ -1,8 +1,9 @@
 # 🛒 API Testing via Postman
+
 I tested all methods that are provided for [Demoshopping API Docs](https://qa.demoshopping.ru/api-docs/) in **Postman** and created the corresponding collections.
 
 ## 📂 Postman Collections
-Download Postman Collection]([postman_collection.json](vscode-local:/c%3A/Users/6th%20gen/Downloads/DemoShopping.postman_collection.json))
+- [Postman Collection for the Online Shop](https://testing-9629.postman.co/workspace/testing-Workspace~34e6deb3-b1a3-43c4-94fa-118b9b447bca/collection/31330919-9c2125e6-3cdc-4a2a-9157-f5577e5f9957?action=share&creator=31330919&active-environment=31330919-1774d17a-3841-4f39-872b-705423eaf674)
 
 
 ## 🚀 Autotests for API
@@ -18,6 +19,6 @@ Using the following WSDL, I created a working collection in Postman that can be 
 - Full **country information**
 - Country-specific **language information**
 
-🔹 **SOAP API Collection (JSON format)**:  
-[Download SOAP API Collection](c:\Users\6th gen\Downloads\CountryInfoService.postman_collection.json)
->>>>>>> d1616db2ba4f4b23a4719f7659f7f1c6d7230d06
+- [SOAP API Collection]
+https://testing-9629.postman.co/workspace/testing-Workspace~34e6deb3-b1a3-43c4-94fa-118b9b447bca/collection/31330919-b2c26603-f654-4c02-961d-ea9a1dd65f69?action=share&creator=31330919&active-environment=31330919-1774d17a-3841-4f39-872b-705423eaf674
+
